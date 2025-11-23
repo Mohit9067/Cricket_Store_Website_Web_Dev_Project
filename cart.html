@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - Cricket Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <style>
+        body {
+            background: linear-gradient(135deg, #1e3c72, #2a5298, #0f2027);
+            min-height: 100vh;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .navbar {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 1rem 0;
+            border-bottom: 1px solid rgba(255, 215, 0, 0.3);
+        }
+
+        .navbar-brand, .nav-link {
+            color: white !important;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .nav-link:hover {
+            color: #FFD700 !important;
+            transform: translateY(-2px);
+        }
+
+        .cart-icon {
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-cricket"></i> Cricket Store
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="bats.html">Bats</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gloves.html">Gloves</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pads.html">Pads</a></li>
+                    <li class="nav-item"><a class="nav-link" href="helmets.html">Helmets</a></li>
+                    <li class="nav-item"><a class="nav-link" href="shoes.html">Shoes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="access.html">Accessories</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link cart-icon" href="cart.html">
+                            <i class="fas fa-shopping-cart"></i> Cart
+                            <span class="cart-badge">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Cart Content -->
+    <div class="container cart-container">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="text-center mb-4" style="color: #FFD700; font-weight: 600;">
+                    <i class="fas fa-shopping-cart"></i> Your Shopping Cart
+                </h2>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-8">
+                <div id="cart-items">
+                    <!-- Cart items will be dynamically loaded here -->
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="cart-summary">
+                    <h4><i class="fas fa-receipt"></i> Order Summary</h4>
+                    <div id="cart-summary-content">
+                        <!-- Summary will be dynamically loaded here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer style="background: rgba(0, 0, 0, 0.3); backdrop-filter: blur(10px); color: white; padding: 50px 0; margin-top: 80px; border-top: 2px solid rgba(255, 215, 0, 0.3);">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5 style="color: #FFD700; margin-bottom: 20px;"><i class="fas fa-cricket"></i> Cricket Store</h5>
+                    <p style="color: rgba(255,255,255,0.7);">Your one-stop destination for premium cricket equipment. Quality gear for champions.</p>
+                    <div style="margin-top: 20px;">
+                        <a href="#" style="color: #FFD700; font-size: 24px; margin-right: 15px;"><i class="fab fa-facebook"></i></a>
+                        <a href="#" style="color: #FFD700; font-size: 24px; margin-right: 15px;"><i class="fab fa-instagram"></i></a>
+                        <a href="#" style="color: #FFD700; font-size: 24px; margin-right: 15px;"><i class="fab fa-twitter"></i></a>
+                        <a href="#" style="color: #FFD700; font-size: 24px;"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5 style="color: #FFD700; margin-bottom: 20px;">Quick Links</h5>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 10px;"><a href="index.html" style="color: rgba(255,255,255,0.7); text-decoration: none;">Home</a></li>
+                        <li style="margin-bottom: 10px;"><a href="bats.html" style="color: rgba(255,255,255,0.7); text-decoration: none;">Shop Bats</a></li>
+                        <li style="margin-bottom: 10px;"><a href="gloves.html" style="color: rgba(255,255,255,0.7); text-decoration: none;">Shop Gloves</a></li>
+                        <li style="margin-bottom: 10px;"><a href="access.html" style="color: rgba(255,255,255,0.7); text-decoration: none;">Accessories</a></li>
+                        <li style="margin-bottom: 10px;"><a href="cart.html" style="color: rgba(255,255,255,0.7); text-decoration: none;">Shopping Cart</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5 style="color: #FFD700; margin-bottom: 20px;">Contact Us</h5>
+                    <p style="color: rgba(255,255,255,0.7);"><i class="fas fa-map-marker-alt" style="color: #FFD700; margin-right: 10px;"></i> 123 Cricket Lane, Sports City</p>
+                    <p style="color: rgba(255,255,255,0.7);"><i class="fas fa-phone" style="color: #FFD700; margin-right: 10px;"></i> +91 98765 43210</p>
+                    <p style="color: rgba(255,255,255,0.7);"><i class="fas fa-envelope" style="color: #FFD700; margin-right: 10px;"></i> support@cricketstore.com</p>
+                    <div style="margin-top: 20px;">
+                        <h6 style="color: #FFD700; margin-bottom: 10px;">We Accept</h6>
+                        <i class="fab fa-cc-visa" style="font-size: 30px; color: rgba(255,255,255,0.7); margin-right: 10px;"></i>
+                        <i class="fab fa-cc-mastercard" style="font-size: 30px; color: rgba(255,255,255,0.7); margin-right: 10px;"></i>
+                        <i class="fab fa-cc-paypal" style="font-size: 30px; color: rgba(255,255,255,0.7); margin-right: 10px;"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-12 text-center" style="border-top: 1px solid rgba(255,215,0,0.3); padding-top: 20px;">
+                    <p style="color: rgba(255,255,255,0.5); margin: 0;">&copy; 2025 Cricket Store. All Rights Reserved. Powered by Razorpay</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/cart.js"></script>
+    <script>
+        // Load and display cart items
+        function loadCartPage() {
+            const cartItems = cart.getCart();
+            const cartItemsContainer = document.getElementById('cart-items');
+            const summaryContainer = document.getElementById('cart-summary-content');
+
+            if (cartItems.length === 0) {
+                cartItemsContainer.innerHTML = `
+                    <div class="empty-cart">
+                        <i class="fas fa-shopping-cart"></i>
+                        <h3>Your cart is empty</h3>
+                        <p style="color: rgba(255,255,255,0.7); margin-bottom: 30px;">Add some amazing cricket gear to get started!</p>
+                        <a href="index.html" class="btn btn-primary" style="background: linear-gradient(135deg, #FFD700, #FFA500); border: none; color: #000; padding: 12px 40px; font-weight: 600;">Continue Shopping</a>
+                    </div>
+                `;
+                summaryContainer.innerHTML = '<p style="color: rgba(255,255,255,0.7);">No items in cart</p>';
+                return;
+            }
+
+            // Display cart items
+            let itemsHTML = cartItems.map(item => `
+                <div class="cart-item" data-id="${item.id}">
+                    <img src="${item.image}" alt="${item.name}" class="cart-item-image">
+                    <div class="cart-item-details">
+                        <h5>${item.name}</h5>
+                        <p class="brand">${item.brand}</p>
+                    </div>
+                    <div class="cart-item-quantity">
+                        <button class="quantity-btn" onclick="updateCartQuantity('${item.id}', ${item.quantity - 1})">
+                            <i class="fas fa-minus"></i>
+                        </button>
+                        <span class="quantity-display">${item.quantity}</span>
+                        <button class="quantity-btn" onclick="updateCartQuantity('${item.id}', ${item.quantity + 1})">
+                            <i class="fas fa-plus"></i>
+                        </button>
+                    </div>
+                    <div class="cart-item-price">${formatCurrency(item.price * item.quantity)}</div>
+                    <button class="remove-btn" onclick="removeFromCart('${item.id}')">
+                        <i class="fas fa-trash"></i>
+                    </button>
+                </div>
+            `).join('');
+
+            cartItemsContainer.innerHTML = itemsHTML;
+
+            // Display summary
+            const subtotal = cart.getCartTotal();
+            const shipping = subtotal > 1000 ? 0 : 100;
+            const tax = subtotal * 0.18;
+            const total = subtotal + shipping + tax;
+
+            summaryContainer.innerHTML = `
+                <div class="summary-row">
+                    <span>Subtotal (${cart.getCartCount()} items)</span>
+                    <span>${formatCurrency(subtotal)}</span>
+                </div>
+                <div class="summary-row">
+                    <span>Shipping</span>
+                    <span>${shipping === 0 ? 'FREE' : formatCurrency(shipping)}</span>
+                </div>
+                <div class="summary-row">
+                    <span>GST (18%)</span>
+                    <span>${formatCurrency(tax)}</span>
+                </div>
+                <div class="summary-row total">
+                    <span>Total</span>
+                    <span>${formatCurrency(total)}</span>
+                </div>
+                <button class="checkout-btn" onclick="proceedToCheckout()">
+                    <i class="fas fa-lock"></i> Proceed to Checkout
+                </button>
+                <a href="index.html" class="continue-shopping">
+                    <i class="fas fa-arrow-left"></i> Continue Shopping
+                </a>
+            `;
+        }
+
+        function updateCartQuantity(productId, newQuantity) {
+            cart.updateQuantity(productId, newQuantity);
+            loadCartPage();
+        }
+
+        function removeFromCart(productId) {
+            cart.removeFromCart(productId);
+            loadCartPage();
+        }
+
+        function proceedToCheckout() {
+            if (cart.getCartCount() === 0) {
+                alert('Your cart is empty!');
+                return;
+            }
+            window.location.href = 'checkout.html';
+        }
+
+        // Load page on ready
+        document.addEventListener('DOMContentLoaded', loadCartPage);
+    </script>
+</body>
+</html>

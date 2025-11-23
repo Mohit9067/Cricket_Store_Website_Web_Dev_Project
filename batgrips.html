@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bat Grips - Cricket Store</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background: linear-gradient(120deg, #fff8e1, #f3e5f5);
+      color: #222;
+    }
+
+    header {
+      background-color: #6a1b9a;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 28px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      padding: 40px;
+      justify-items: center;
+    }
+
+    .card {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      width: 260px;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 15px;
+      text-align: center;
+    }
+
+    .card-content h3 {
+      margin: 10px 0;
+      color: #6a1b9a;
+    }
+
+    .card-content p {
+      color: #555;
+      font-size: 15px;
+      margin-bottom: 10px;
+    }
+
+    .price {
+      font-weight: bold;
+      color: #e91e63;
+      font-size: 16px;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: #8e24aa;
+      color: white;
+      text-decoration: none;
+      padding: 8px 16px;
+      border-radius: 8px;
+      margin-top: 8px;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #6a1b9a;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #6a1b9a;
+      color: white;
+      padding: 15px 0;
+      font-size: 14px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>Bat Grips Collection</header>
+
+  <div class="container">
+    <div class="card">
+      <img src="../ssbatg.jpg" alt="SS Bat Grip">
+      <div class="card-content">
+        <h3>SS Super Soft Grip</h3>
+        <p>Soft, durable, and designed for superior comfort and control.</p>
+        <p class="price">₹299</p>
+        <a href="ssbatg.html" class="btn">Buy Now</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="sgbatg.jpg" alt="SG Bat Grip">
+      <div class="card-content">
+        <h3>SG Hexa Grip</h3>
+        <p>Non-slip texture for maximum grip in all playing conditions.</p>
+        <p class="price">₹279</p>
+        <a href="../sgbatg.html" class="btn">Buy Now</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="mrfbatg.webp" alt="MRF Bat Grip">
+      <div class="card-content">
+        <h3>MRF Wave Grip</h3>
+        <p>Stylish and high-performance grip with superior moisture control.</p>
+        <p class="price">₹319</p>
+        <a href="mrfbatg.html" class="btn">Buy Now</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="ceatbatg.jpg" alt="CEAT Bat Grip">
+      <div class="card-content">
+        <h3>CEAT Ripple Grip</h3>
+        <p>Excellent cushioning with unique ripple design for shock absorption.</p>
+        <p class="price">₹269</p>
+        <a href="ceatbatg.html" class="btn">Buy Now</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="dscbatg.jpg" alt="DSC Bat Grip">
+      <div class="card-content">
+        <h3>DSC Matrix Grip</h3>
+        <p>Lightweight, long-lasting grip offering firm hold and comfort.</p>
+        <p class="price">₹249</p>
+        <a href="../dscbatg.html" class="btn">Buy Now</a>
+      </div>
+    </div>
+  </div>
+
+  <footer>© 2025 Cricket Store | All Rights Reserved</footer>
+</body>
+</html>

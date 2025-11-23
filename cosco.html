@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cosco Balls - Cricket Store</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background: linear-gradient(120deg, #fffde7, #e0f2f1);
+      color: #222;
+    }
+
+    header {
+      background-color: #f57f17;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 28px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      padding: 40px;
+      justify-items: center;
+    }
+
+    .card {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      width: 260px;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 15px;
+      text-align: center;
+    }
+
+    .card-content h3 {
+      margin: 10px 0;
+      color: #f57f17;
+    }
+
+    .card-content p {
+      color: #555;
+      font-size: 15px;
+      margin-bottom: 10px;
+    }
+
+    .price {
+      font-weight: bold;
+      color: #ff8f00;
+      font-size: 16px;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: #ff8f00;
+      color: white;
+      text-decoration: none;
+      padding: 8px 16px;
+      border-radius: 8px;
+      margin-top: 8px;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #f57f17;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #f57f17;
+      color: white;
+      padding: 15px 0;
+      font-size: 14px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>Cosco Balls Collection</header>
+
+  <div class="container">
+    <div class="card">
+      <img src="../ssc.jpg" alt="Cosco SS Ball">
+      <div class="card-content">
+        <h3>Cosco SS Ball</h3>
+        <p>Durable leather ball ideal for practice and club-level cricket matches.</p>
+        <p class="price">₹299</p>
+        <a href="sscosco.html" class="btn">Buy Now</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="../sgc.jpg" alt="Cosco SG Ball">
+      <div class="card-content">
+        <h3>Cosco SG Ball</h3>
+        <p>Perfect for limited overs matches with consistent bounce and swing.</p>
+        <p class="price">₹349</p>
+        <a href="sgcosco.html" class="btn">Buy Now</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="../mrfc.jpg" alt="Cosco MRF Ball">
+      <div class="card-content">
+        <h3>Cosco MRF Ball</h3>
+        <p>High-quality red leather ball, suitable for long innings and club matches.</p>
+        <p class="price">₹329</p>
+        <a href="mrfcosco.html" class="btn">Buy Now</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="../ceatc.jpg" alt="Cosco CEAT Ball">
+      <div class="card-content">
+        <h3>Cosco CEAT Ball</h3>
+        <p>Lightweight and soft, perfect for beginners and practice sessions.</p>
+        <p class="price">₹199</p>
+        <a href="../ceatcosco.html" class="btn">Buy Now</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="../dscc.jpg" alt="Cosco DSC Ball">
+      <div class="card-content">
+        <h3>Cosco DSC Ball</h3>
+        <p>Professional-grade leather ball approved for tournament-level matches.</p>
+        <p class="price">₹399</p>
+        <a href="../dsccosco.html" class="btn">Buy Now</a>
+      </div>
+    </div>
+  </div>
+
+  <footer>© 2025 Cricket Store | All Rights Reserved</footer>
+</body>
+</html>

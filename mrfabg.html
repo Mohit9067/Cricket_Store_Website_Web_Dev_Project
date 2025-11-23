@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>MRF Genius Abdominal Guard – Protective Gear</title>
+
+<style>
+  :root{
+    --accent:#e63946;
+    --accent-dark:#c53030;
+    --muted:#6b7280;
+    --bg1:#fff5f5;
+    --card:#ffffff;
+    --shadow:0 8px 30px rgba(22,25,36,0.08);
+    --radius:14px;
+    font-family: "Inter", system-ui;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:linear-gradient(180deg,#fff5f5 0%,#fff 40%);color:#111827;}
+  .page{max-width:1150px;margin:30px auto;padding:24px;}
+  .breadcrumb{font-size:13px;color:var(--muted);margin-bottom:14px;}
+
+  .hero{display:grid;grid-template-columns:420px 1fr;gap:28px;background:var(--card);border-radius:var(--radius);padding:28px;box-shadow:var(--shadow);align-items:start;}
+  .gallery{display:flex;flex-direction:column;align-items:center;gap:12px;}
+  .main-image{width:360px;height:420px;border-radius:12px;object-fit:contain;padding:18px;background:#fff0f0;}
+  .thumbs{display:flex;gap:8px;}
+  .thumbs img{width:76px;height:76px;border-radius:10px;cursor:pointer;border:2px solid transparent;}
+  .thumbs img.active{border-color:var(--accent);}
+
+  .title{font-size:26px;font-weight:700;margin-bottom:6px;}
+  .brand{color:var(--muted);font-size:14px;margin-bottom:8px;}
+  .tagline{color:#374151;margin-bottom:14px;}
+
+  .price-row{display:flex;align-items:center;gap:18px;margin:14px 0;}
+  .price{font-size:28px;color:var(--accent);font-weight:800;}
+  .old-price{text-decoration:line-through;color:var(--muted);}
+  .discount{background:#ffe3e3;color:var(--accent);padding:6px 10px;border-radius:8px;font-weight:700;font-size:13px;}
+
+  .btn{background:var(--accent);color:#fff;padding:12px 20px;border:none;border-radius:10px;font-weight:700;cursor:pointer;}
+  .btn.secondary{background:transparent;border:1px solid #e5e7eb;color:#111827;}
+  .cart-badge{background:#111827;color:#fff;padding:6px 10px;border-radius:999px;margin-left:auto;}
+
+  .chip{background:#fff;padding:10px;border-radius:10px;border:1px solid #f1c5c5;font-size:13px;color:var(--muted);}
+  .highlights{display:flex;gap:12px;flex-wrap:wrap;}
+
+  .content{margin-top:22px;display:grid;grid-template-columns:2fr 1fr;gap:20px;}
+  .card{background:var(--card);padding:18px;border-radius:12px;box-shadow:var(--shadow);}
+
+  h2{margin-bottom:12px;font-size:20px;color:#0f172a;}
+  p{line-height:1.6;color:#374151;}
+
+  .reviews-list{display:flex;flex-direction:column;gap:12px;margin-top:10px;}
+  .review{background:#fff;border:1px solid #f1c5c5;padding:12px;border-radius:10px;}
+  .r-head{display:flex;align-items:center;gap:12px;}
+  .r-stars{color:#f59e0b;font-size:18px;margin-top:6px;}
+
+  .qa-item{padding:12px;border-radius:10px;border:1px solid #f1c5c5;margin-bottom:10px;}
+  .answer{background:#ffeaea;padding:10px;border-radius:8px;margin-top:8px;}
+
+  .form-row input, textarea, select{padding:10px;border-radius:8px;border:1px solid #f1c5c5;width:100%;}
+
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="breadcrumb">Home › Sports › Cricket › Protective Gear › Abdominal Guard › <strong>MRF Genius Abd Guard</strong></div>
+
+  <div class="hero">
+    <div class="gallery">
+      <img id="mainImg" class="main-image" src="/mnt/data/mrf-abd1.png">
+      <div class="thumbs">
+        <img src="/mnt/data/mrf-abd1.png" data-src="/mnt/data/mrf-abd1.png" class="active">
+        <img src="/mnt/data/mrf-abd2.png" data-src="/mnt/data/mrf-abd2.png">
+        <img src="/mnt/data/mrf-abd3.png" data-src="/mnt/data/mrf-abd3.png">
+      </div>
+    </div>
+
+    <div>
+      <div class="title">MRF Genius Abdominal Guard – Elite Protection</div>
+      <div class="brand">Brand: MRF • Model: Genius Elite</div>
+      <div class="tagline">Trusted by professionals • High-impact protection • Maximum comfort</div>
+
+      <div class="price-row">
+        <div>
+          <div class="price">₹399</div>
+          <div><span class="old-price">₹550</span> &nbsp; <span class="discount">28% off</span></div>
+        </div>
+        <div class="cart-badge" id="cartCount">0</div>
+      </div>
+
+      <div style="display:flex;gap:12px;margin-top:10px;">
+        <button class="btn" id="shopNow">Shop Now</button>
+        <button class="btn" id="addToCart">Add to Cart</button>
+        <button class="btn secondary" id="viewCart">View Cart</button>
+      </div>
+
+      <div class="highlights" style="margin-top:16px;">
+        <div class="chip">High-Impact Resistant</div>
+        <div class="chip">Dual-Density Shell</div>
+        <div class="chip">Soft-Foam Lining</div>
+        <div class="chip">Ergonomic Fit</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="content">
+    <div>
+      <div class="card">
+        <h2>About MRF</h2>
+        <p>MRF is one of the world’s most trusted cricket brands, endorsed by legends like **Virat Kohli**. MRF protective gear is known for durability, advanced safety technology, premium materials, and professional-grade comfort.</p>
+
+        <h2>Product Description</h2>
+        <p>The <strong>MRF Genius Abdominal Guard</strong> is engineered with a tough impact-resistant outer shell, lined with soft comfort foam, designed to protect players during high-speed deliveries. Ideal for club & professional play.</p>
+
+        <h2>Specifications</h2>
+        <ul>
+          <li>Material: High-density plastic shell</li>
+          <li>Inner: Soft cushioned foam padding</li>
+          <li>Airflow vents for breathability</li>
+          <li>Ergonomic shape for firm groin fit</li>
+          <li>Suitable for leather ball cricket</li>
+        </ul>
+      </div>
+
+      <div class="card" style="margin-top:16px;">
+        <h2>Customer Reviews <span id="avgRating"></span></h2>
+
+        <div class="form-row" style="display:flex;gap:10px;">
+          <input id="revName" placeholder="Your name">
+          <select id="revRating">
+            <option value="5">★★★★★ 5</option>
+            <option value="4">★★★★ 4</option>
+            <option value="3">★★★ 3</option>
+            <option value="2">★★ 2</option>
+            <option value="1">★ 1</option>
+          </select>
+        </div>
+        <textarea id="revText" placeholder="Write your review..." style="margin-top:10px;"></textarea>
+        <button class="btn" id="submitReview" style="margin-top:10px;">Submit Review</button>
+
+        <div class="reviews-list" id="reviewsList"></div>
+      </div>
+
+      <div class="card" style="margin-top:16px;">
+        <h2>Questions & Answers</h2>
+        <div style="display:flex;gap:10px;">
+          <input id="qName" placeholder="Your name">
+          <input id="qText" placeholder="Ask a question about this product" style="flex:1;">
+          <button class="btn" id="askQuestion">Ask</button>
+        </div>
+
+        <div id="qaList" style="margin-top:14px;"></div>
+      </div>
+    </div>
+
+    <aside>
+      <div class="card">
+        <h2>Delivery</h2>
+        <p>Fast delivery across India. Free delivery on orders above ₹499.</p>
+      </div>
+
+      <div class="card" style="margin-top:16px;">
+        <h2>Seller</h2>
+        <p><strong>MRF Official Store</strong></p>
+        <p class="muted">7-Day Return Policy • GST Invoice</p>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<script>
+// Storage keys
+const CART_KEY = 'cart_mrf_abd';
+const REV_KEY = 'rev_mrf_abd';
+const QA_KEY = 'qa_mrf_abd';
+const $ = s => document.querySelector(s);
+
+// Gallery
+const thumbs = document.querySelectorAll('.thumbs img');
+thumbs.forEach(t => t.addEventListener('click', () => {
+  thumbs.forEach(x=>x.classList.remove('active'));
+  t.classList.add('active');
+  $('#mainImg').src = t.dataset.src;
+}));
+
+// Cart
+function loadCart(){ return JSON.parse(localStorage.getItem(CART_KEY)||'[]'); }
+function saveCart(x){ localStorage.setItem(CART_KEY, JSON.stringify(x)); }
+function renderCart(){ $('#cartCount').textContent = loadCart().length; }
+
+$('#addToCart').onclick = ()=>{
+  const c = loadCart();
+  c.push({id:'mrf-abd-1', title:'MRF Genius Abd Guard', price:399});
+  saveCart(c); renderCart(); alert('Added to cart');
+};
+$('#shopNow').onclick = ()=>{
+  const c=loadCart(); c.push({id:'mrf-abd-1',title:'MRF Genius Abd Guard',price:399});
+  saveCart(c); renderCart(); alert('Proceed to checkout (demo)');
+};
+$('#viewCart').onclick = ()=>{
+  let c=loadCart(); if(!c.length) return alert('Cart empty');
+  let msg='Your Cart:\n\n'; c.forEach((x,i)=> msg+=`${i+1}. ${x.title} - ₹${x.price}\n`);
+  alert(msg);
+};
+
+// Reviews
+function loadReviews(){ return JSON.parse(localStorage.getItem(REV_KEY)||'[]'); }
+function saveReviews(x){ localStorage.setItem(REV_KEY, JSON.stringify(x)); }
+function avgRating(r){ if(!r.length) return 0; return (r.reduce((a,b)=>a+Number(b.rating),0)/r.length).toFixed(1); }
+
+function renderReviews(){
+  const r = loadReviews();
+  const box = $('#reviewsList');
+  box.innerHTML = '';
+  if(!r.length){ box.innerHTML='<div class="muted">No reviews yet.</div>'; $('#avgRating').textContent=''; return; }
+  r.slice().reverse().forEach(v=>{
+    const div=document.createElement('div');
+    div.className='review';
+    div.innerHTML=`<div class='r-head'><strong>${v.name}</strong><span style='margin-left:auto;'>${v.time}</span></div>
+                   <div class='r-stars'>${'★'.repeat(v.rating)}${'☆'.repeat(5-v.rating)}</div>
+                   <div style='margin-top:6px;'>${v.text}</div>`;
+    box.appendChild(div);
+  });
+  $('#avgRating').textContent = ` • Avg: ${avgRating(r)}/5`;
+}
+
+$('#submitReview').onclick = ()=>{
+  const name = $('#revName').value.trim()||'Anonymous';
+  const rating = Number($('#revRating').value);
+  const text = $('#revText').value.trim();
+  if(!text) return alert('Write a review');
+  const r=loadReviews();
+  r.push({name,rating,text,time:new Date().toLocaleString()});
+  saveReviews(r); renderReviews(); $('#revText').
+

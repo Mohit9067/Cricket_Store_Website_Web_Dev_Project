@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>MRF Bat Grip – Professional Cricket Grip</title>
+
+<style>
+  :root{
+    --accent:#ff0000;
+    --accent-dark:#c40000;
+    --muted:#6b7280;
+    --bg1:#fff0f0;
+    --card:#ffffff;
+    --shadow: 0 8px 30px rgba(22,25,36,0.08);
+    --radius:14px;
+    font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  }
+  *{box-sizing:border-box}
+  body{ margin:0; background: linear-gradient(180deg,#fff0f0 0%, #fff 40%); color:#111827; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale; }
+
+  .page{ max-width:1150px; margin:30px auto; padding:24px; }
+  .breadcrumb{ font-size:13px; color:var(--muted); margin-bottom:14px; }
+
+  .hero{ display:grid; grid-template-columns:420px 1fr; gap:28px; background:var(--card); border-radius:var(--radius); padding:28px; box-shadow:var(--shadow); align-items:start; }
+  .gallery{ display:flex; gap:12px; flex-direction:column; align-items:center; }
+  .thumbs{ display:flex; gap:8px; margin-top:12px; }
+  .thumbs img{ width:76px;height:76px;object-fit:cover;border-radius:10px;border:2px solid transparent;cursor:pointer; }
+  .thumbs img.active{ border-color:var(--accent); box-shadow:0 6px 20px rgba(0,0,0,0.08); }
+  .main-image{ width:360px;height:420px;border-radius:12px;object-fit:contain;background:linear-gradient(180deg,#fff,#fff0f0); display:block;padding:18px; }
+
+  .info{ padding:6px 6px 6px 0; }
+  .title{ font-size:26px;font-weight:700;margin:0 0 6px; }
+  .brand{ color:var(--muted); font-weight:600; font-size:14px; margin-bottom:8px; }
+  .tagline{ color:#374151; margin-bottom:10px; }
+
+  .price-row{ display:flex; align-items:center; gap:18px; margin:14px 0; }
+  .price{ font-size:28px; color:var(--accent); font-weight:800; }
+  .old-price{ color:var(--muted); text-decoration:line-through; font-size:14px; }
+  .discount{ background:#ffe5e5; color:var(--accent);padding:6px 10px;border-radius:8px;font-weight:700;font-size:13px; }
+
+  .buy-actions{ margin-top:18px; display:flex; gap:12px; align-items:center; }
+  .btn{ background:var(--accent); color:#fff; padding:12px 20px; border-radius:10px; font-weight:700; text-decoration:none; box-shadow: 0 6px 18px rgba(255,0,0,0.15); border:none; cursor:pointer; }
+  .btn.secondary{ background:transparent; border:1px solid #e5e7eb; color:#111827; font-weight:600; }
+  .cart-badge{ background:#111827; color:#fff; padding:6px 10px; border-radius:999px; font-size:14px; margin-left:auto; }
+
+  .highlights{ display:flex; gap:12px; margin-top:12px; flex-wrap:wrap; }
+  .chip{ background:#fff; padding:10px 12px; border-radius:12px; border:1px solid #f1f5f9; color:var(--muted); font-weight:600; font-size:13px; }
+
+  .content{ margin-top:22px; display:grid; grid-template-columns:2fr 1fr; gap:20px; }
+  .card{ background:var(--card); border-radius:12px; padding:18px; box-shadow:var(--shadow); }
+
+  h2{ margin:0 0 12px 0; font-size:20px; color:#0f172a; }
+  p{ color:#374151; line-height:1.6; margin:0 0 10px 0; }
+
+  .specs table{ width:100%; border-collapse:collapse; font-size:15px; }
+  .specs td{ padding:10px 6px; border-bottom:1px dashed #ffc0c0; color:#111827; }
+  .specs td.title{ color:var(--muted); width:40%; font-weight:700; }
+
+  .reviews-list{ margin-top:10px; display:flex; flex-direction:column; gap:12px; }
+  .review{ border-radius:10px; padding:12px; background:#ffffff; border:1px solid #ffc0c0; }
+  .r-head{ display:flex; align-items:center; gap:12px; }
+  .r-name{ font-weight:700; }
+  .r-time{ color:var(--muted); font-size:13px; margin-left:auto; }
+  .r-stars{ color:#f59e0b; font-size:18px; margin-top:6px; }
+
+  .form-row{ display:flex; gap:10px; margin-top:8px; }
+  .form-row input, textarea, select{ padding:10px 12px; border-radius:8px; border:1px solid #ffc0c0; font-size:14px; flex:1; }
+  .form-row textarea{ resize:vertical; min-height:80px; }
+
+  .qa-item{ padding:12px; border-radius:10px; background:#fff; border:1px solid #ffc0c0; margin-bottom:10px; }
+  .answer{ margin-left:14px; margin-top:8px; padding:10px; background:#ffe5e5; border-radius:8px; color:#374151; font-size:14px; }
+
+  .muted{ color:var(--muted); font-size:13px; }
+  @media (max-width:980px){ .hero{ grid-template-columns:1fr; } .main-image{ width:100%; height:360px; } .page{ padding:14px; } .content{ grid-template-columns:1fr; } }
+</style>
+</head>
+<body>
+  <div class="page">
+
+    <div class="breadcrumb">Home › Sports › Cricket › Bat Grip › MRF › <strong>MRF Professional Grip</strong></div>
+
+    <div class="hero">
+      <div class="gallery">
+        <img id="mainImg" class="main-image" src="/mnt/data/mrf-grip-1.png" alt="MRF Bat Grip">
+        <div class="thumbs" role="list">
+          <img src="/mnt/data/mrf-grip-1.png" data-src="/mnt/data/mrf-grip-1.png" class="active" alt="img1">
+          <img src="/mnt/data/mrf-grip-2.png" data-src="/mnt/data/mrf-grip-2.png" alt="img2">
+          <img src="/mnt/data/mrf-grip-3.png" data-src="/mnt/data/mrf-grip-3.png" alt="img3">
+        </div>
+      </div>
+
+      <div class="info">
+        <div class="title">MRF Professional Cricket Bat Grip</div>
+        <div class="brand">Brand: MRF • Model: Professional Grip</div>
+        <div class="tagline">Comfortable hold • Non-slip • High durability rubber grip</div>
+
+        <div class="price-row">
+          <div>
+            <div class="price">₹499</div>
+            <div class="muted"><span class="old-price">₹699</span> &nbsp; <span class="discount">28% off</span></div>
+          </div>
+
+          <div style="margin-left:auto; display:flex; align-items:center;">
+            <div class="muted" style="margin-right:10px">Cash on Delivery available</div>
+            <div class="cart-badge" id="cartCount">0</div>
+          </div>
+        </div>
+
+        <div class="buy-actions">
+          <button class="btn" id="shopNow">Shop Now</button>
+          <button class="btn" id="addToCart">Add to Cart</button>
+          <button class="btn secondary" id="viewCart">View Cart</button>
+        </div>
+
+        <div class="highlights" style="margin-top:16px">
+          <div class="chip">Premium rubber</div>
+          <div class="chip">Ergonomic texture</div>
+          <div class="chip">Shock absorption</div>
+          <div class="chip">Easy to install</div>
+        </div>
+
+        <div style="margin-top:16px" class="muted">Seller: <strong>MRF Official</strong> • 7 Days Return • GST invoice available</div>
+      </div>
+    </div>
+
+    <div class="content">
+      <div>
+        <div class="card specs">
+          <h2>About MRF</h2>
+          <p>MRF (Madras Rubber Factory) is one of India’s top sports brands, renowned for cricket bats, grips, and sporting goods. Their grips are used by professional and amateur cricketers for superior control and comfort.</p>
+
+          <h2 style="margin-top:18px">Product Description</h2>
+          <p>The <strong>MRF Professional Bat Grip</strong> provides a textured, non-slip rubber surface that enhances control and comfort. Its ergonomic design reduces vibration and fatigue during long innings.</p>
+
+          <h2 style="margin-top:18px">Detailed Specifications</h2>
+          <table>
+            <tr><td class="title">Material</td><td>High-quality rubber</td></tr>
+            <tr><td class="title">Color</td><td>Black / Red / Blue</td></tr>
+            <tr><td class="title">Length</td><td>270 mm approx.</td></tr>
+            <tr><td class="title">Width</td><td>32 mm approx.</td></tr>
+            <tr><td class="title">Texture</td><td>Non-slip, ergonomic pattern</td></tr>
+            <tr><td class="title">Included</td><td>1 MRF Bat Grip</td></tr>
+          </table>
+        </div>
+
+        <div class="card" style="margin-top:18px;">
+          <h2>Customer Reviews <span id="avgRating" style="font-size:15px;color:var(--muted);margin-left:10px;"></span></h2>
+          <div style="margin-top:8px">
+            <div class="form-row">
+              <input type="text" id="revName" placeholder="Your name" aria-label="Your name">
+              <select id="revRating" aria-label="Rating">
+                <option value="5">★★★★★ 5</option>
+                <option value="4">★★★★ 4</option>
+                <option value="3">★★★ 3</option>
+                <option value="2">★★ 2</option>
+                <option value="1">★ 1</option>
+              </select>
+            </div>
+            <div style="margin-top:8px">
+              <textarea id="revText" placeholder="Write your review..."></textarea>
+            </div>
+            <div style="margin-top:8px;display:flex;gap:10px;">
+              <button class="btn" id="submitReview">Submit Review</button>
+              <button class="btn secondary" id="clearReviews">Clear All (debug)</button>
+            </div>
+          </div>
+          <div class="reviews-list" id="reviewsList" aria-live="polite" style="margin-top:12px;"></div>
+        </div>
+
+        <div class="card" style="margin-top:18px;">
+          <h2>Questions & Answers</h2>
+          <div style="margin-top:8px">
+            <input id="qName" type="text" placeholder="Your name" style="padding:10px;border-radius:8px;border:1px solid #ffc0c0;width:220px;">
+            <input id="qText" type="text" placeholder="Ask a question about the product" style="padding:10px;border-radius:8px;border:1px solid #ffc0c0;flex:1;margin-left:10px;">
+            <button class="btn" id="askQuestion" style="margin-left:10px;">Ask</button>
+          </div>
+          <div id="qaList" style="margin-top:14px"></div>
+        </div>
+      </div>
+
+      <aside>
+        <div class="card">
+          <h2>Price & Offers</h2>
+          <p><strong>Special price</strong> — Bank offers & instant cashback available at checkout.</p>
+          <ul style="margin-top:8px;color:#374151;">
+            <li>Special Price: 28% off</li>
+            <li>Bank Offer: Up to 5% cashback on select cards</li>
+            <li>No-Cost EMI available</li>
+          </ul>
+        </div>
+
+        <div class="card" style="margin-top:16px;">
+          <h2>Delivery</h2>
+          <p class="muted">Enter pincode at checkout</p>
+          <p>Delivery within 2–4 business days</p>
+        </div>
+
+        <div class="card" style="margin-top:16px;">
+          <h2>Seller</h2>
+          <p><strong>MRF Official</strong></p>
+          <p class="muted">7 Days Return Policy • GST invoice available</p>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+<script>
+const CART_KEY='cart_mrf_grip', REV_KEY='reviews_mrf_grip', QA_KEY='qa_mrf_grip';
+const $=s=>document.querySelector(s);
+
+document.querySelectorAll('.thumbs img').forEach(t=>t.addEventListener('click',()=>{document.querySelectorAll('.thumbs img').forEach(x=>x.classList.remove('active')); t.classList.add('active'); $('#mainImg').src=t.dataset.src;}));
+
+function loadCart(){return JSON.parse(localStorage.getItem(CART_KEY)||'[]');}
+function saveCart(c){localStorage.setItem(CART_KEY,JSON.stringify(c));}
+function renderCartCount(){$('#cartCount').textContent=loadCart().length;}
+
+$('#addToCart').addEventListener('click',()=>{let c=loadCart();c.push({id:'mrf-grip-001',title:'MRF Professional Grip',price:499,at:new Date().toISOString()});saveCart(c);renderCartCount();alert('Added to cart ✓');});
+$('#shopNow').addEventListener('click',()=>{let c=loadCart();c.push({id:'mrf-grip-001',title:'MRF Professional Grip',price:499,at:new Date().toISOString()});saveCart(c);renderCartCount();alert('Proceeding to checkout...');});
+$('#viewCart').addEventListener('click',()=>{let items=loadCart();if(!items.length)return alert('Cart is empty');let msg='Cart contents:\n\n';items.forEach((it,i)=>msg+=`${i+1}. ${it.title} — ₹${it.price}\n`);alert(msg);});
+
+// Reviews
+function loadReviews(){return JSON.parse(localStorage.getItem(REV_KEY)||'[]');}
+function saveReviews(list){localStorage.setItem(REV_KEY,JSON.stringify(list));}
+function escapeHtml(str){return String(str).replace(/[&<>"']/g,s=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[s]));}
+function calcAvgRating(list){if(!list.length)return 0;return (list.reduce((a,b)=>a+Number(b.rating),0)/list.length).toFixed(1);}
+function renderReviews(){const list=loadReviews();const container=$('#reviewsList');container.innerHTML='';if(!list.length)container.innerHTML='<div class="muted">No reviews yet. Be the first to review!</div>';list.slice().reverse().forEach(r=>{const div=document.createElement('div');div.className='review';const stars='★'.repeat(r.rating)+'☆'.repeat(5-r.rating);div.innerHTML=`<div class="r-head"><div class="r-name">${escapeHtml(r.name||'Anonymous')}</div><div class="r-time">${new Date(r.time).toLocaleString()}</div></div><div class="r-stars">${stars}</div><div style="margin-top:8px;color:#111827">${escapeHtml(r.text)}</div>`;container.appendChild(div);});$('#avgRating').textContent=list.length?`Avg: ${calcAvgRating(list)}/5 • (${list.length} reviews)`:'No ratings yet';}
+$('#submitReview').addEventListener('click',()=>{const name=$('#revName').value.trim()||'Anonymous';const rating=Number($('#revRating').value);const text=$('#revText').value.trim();if(!text)return alert('Write a review');let list=loadReviews();list.push({name,rating,text,time:new Date().toISOString()});saveReviews(list);$('#revText').value='';renderReviews();alert('Review saved!');});
+$('#clearReviews').addEventListener('click',()=>{if(!confirm('Clear all reviews?'))return;localStorage.removeItem(REV_KEY);renderReviews();});
+
+// QA
+function loadQA(){return JSON.parse(localStorage.getItem(QA_KEY)||'[]');}
+function saveQA(list){localStorage.setItem(QA_KEY,JSON.stringify(list));}
+function renderQA(){const list=loadQA();const el=$('#qaList');el.innerHTML='';if(!list.length)el.innerHTML='<div class="muted">No questions yet

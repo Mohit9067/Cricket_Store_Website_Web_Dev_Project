@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cricket Stumps - Cricket Store</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background: linear-gradient(120deg, #fff8e1, #fff3e0);
+      color: #222;
+    }
+
+    header {
+      background-color: #6a1b9a;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 28px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      padding: 40px;
+      justify-items: center;
+    }
+
+    .card {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      width: 260px;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 15px;
+      text-align: center;
+    }
+
+    .card-content h3 {
+      margin: 10px 0;
+      color: #6a1b9a;
+    }
+
+    .card-content p {
+      color: #555;
+      font-size: 15px;
+      margin-bottom: 10px;
+    }
+
+    .price {
+      font-weight: bold;
+      color: #8e24aa;
+      font-size: 16px;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: #8e24aa;
+      color: white;
+      text-decoration: none;
+      padding: 8px 16px;
+      border-radius: 8px;
+      margin-top: 8px;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #6a1b9a;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #6a1b9a;
+      color: white;
+      padding: 15px 0;
+      font-size: 14px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>Cricket Stumps Collection</header>
+
+  <div class="container">
+    <div class="card">
+      <img src="../ssst.jpg" alt="SS Cricket Stumps">
+      <div class="card-content">
+        <h3>SS Stumps</h3>
+        <p>High-quality wooden stumps, sturdy and perfect for professional matches.</p>
+        <p class="price">₹1,200</p>
+        <a href="../ssstumps.html" class="btn">Buy Now</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="../sgst.webp" alt="SG Cricket Stumps">
+      <div class="card-content">
+        <h3>SG Stumps</h3>
+        <p>Premium grade stumps with smooth finish, used in club and state-level matches.</p>
+        <p class="price">₹1,150</p>
+        <a href="../sgstumps.html" class="btn">Buy Now</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="../mrfst.webp" alt="MRF Cricket Stumps">
+      <div class="card-content">
+        <h3>MRF Stumps</h3>
+        <p>Durable, strong stumps designed for tournament-level play and training sessions.</p>
+        <p class="price">₹1,250</p>
+        <a href="../mrfstumps.html" class="btn">Buy Now</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="../ceatst.jpg" alt="CEAT Cricket Stumps">
+      <div class="card-content">
+        <h3>CEAT Stumps</h3>
+        <p>High-standard wooden stumps with precise dimensions, ideal for practice and matches.</p>
+        <p class="price">₹1,100</p>
+        <a href="../ceatstumps.html" class="btn">Buy Now</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="../dscst.jpg" alt="DSC Cricket Stumps">
+      <div class="card-content">
+        <h3>DSC Stumps</h3>
+        <p>Strong, durable stumps designed for long-lasting use and consistent performance.</p>
+        <p class="price">₹1,180</p>
+        <a href="../dscstumps.html" class="btn">Buy Now</a>
+      </div>
+    </div>
+  </div>
+
+  <footer>© 2025 Cricket Store | All Rights Reserved</footer>
+</body>
+</html>

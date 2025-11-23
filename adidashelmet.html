@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Adidas XT 2.0 Cricket Helmet</title>
+
+<style>
+  :root{
+    --accent:#0d6efd;
+    --accent-dark:#0a58ca;
+    --muted:#6b7280;
+    --bg1:#e7f1ff;
+    --card:#ffffff;
+    --shadow:0 8px 30px rgba(0,0,0,0.08);
+    --radius:14px;
+    font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto;
+  }
+  *{ box-sizing:border-box; }
+  body{ margin:0; background:linear-gradient(180deg,#e7f1ff 0%, #fff 40%); color:#111827; }
+
+  .page{ max-width:1150px; margin:30px auto; padding:24px; }
+  .breadcrumb{ font-size:13px; color:var(--muted); margin-bottom:14px; }
+
+  .hero{ display:grid; grid-template-columns:420px 1fr; gap:28px; background:var(--card); padding:28px; border-radius:var(--radius); box-shadow:var(--shadow); }
+  .gallery{ display:flex; flex-direction:column; align-items:center; gap:12px; }
+  .thumbs{ display:flex; gap:8px; }
+  .thumbs img{ width:76px; height:76px; object-fit:cover; border-radius:10px; border:2px solid transparent; cursor:pointer; }
+  .thumbs img.active{ border-color:var(--accent); }
+  .main-image{ width:360px; height:420px; padding:16px; background:#f8fbff; border-radius:12px; object-fit:contain; }
+
+  .info .title{ font-size:26px; font-weight:700; }
+  .brand{ color:var(--muted); font-size:14px; margin-bottom:8px; }
+  .tagline{ margin-bottom:10px; color:#374151; }
+
+  .price-row{ display:flex; align-items:center; gap:18px; margin:14px 0; }
+  .price{ font-size:28px; color:var(--accent); font-weight:800; }
+  .old-price{ text-decoration:line-through; color:var(--muted); }
+  .discount{ background:#e7f1ff; color:var(--accent); padding:6px 10px; border-radius:8px; font-weight:700; font-size:13px; }
+
+  .btn{ padding:12px 20px; border-radius:10px; background:var(--accent); color:#fff; border:none; font-weight:700; cursor:pointer; }
+  .btn.secondary{ background:transparent; border:1px solid #e5e7eb; color:#111827; }
+  .cart-badge{ background:#111827; color:white; padding:6px 10px; border-radius:50px; margin-left:auto; font-size:14px; }
+
+  .chip{ background:white; padding:10px 12px; border-radius:12px; border:1px solid #f1f5f9; color:var(--muted); font-size:13px; }
+  .highlights{ display:flex; gap:10px; flex-wrap:wrap; margin-top:16px; }
+
+  .content{ display:grid; grid-template-columns:2fr 1fr; gap:20px; margin-top:24px; }
+  .card{ background:var(--card); border-radius:14px; padding:18px; box-shadow:var(--shadow); }
+  
+  .reviews-list{ display:flex; flex-direction:column; gap:12px; margin-top:12px; }
+  .review{ background:white; padding:12px; border-radius:10px; border:1px solid #d0e7ff; }
+  .r-stars{ color:#f59e0b; font-size:18px; margin-top:6px; }
+
+  .qa-item{ padding:12px; border-radius:10px; border:1px solid #d0e7ff; margin-bottom:10px; }
+  .answer{ margin-top:8px; padding:10px; background:#e7f1ff; border-radius:8px; }
+
+  @media(max-width:980px){ .hero{ grid-template-columns:1fr; } .page{ padding:14px; } }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="breadcrumb">Home › Cricket › Helmet › Adidas › <strong>Adidas XT 2.0 Helmet</strong></div>
+
+  <div class="hero">
+    <div class="gallery">
+      <img id="mainImg" class="main-image" src="/mnt/data/adidashelmet-1.png" alt="Adidas Helmet">
+      <div class="thumbs">
+        <img src="/mnt/data/adidashelmet-1.png" data-src="/mnt/data/adidashelmet-1.png" class="active">
+        <img src="/mnt/data/adidashelmet-2.png" data-src="/mnt/data/adidashelmet-2.png">
+        <img src="/mnt/data/adidashelmet-3.png" data-src="/mnt/data/adidashelmet-3.png">
+      </div>
+    </div>
+
+    <div class="info">
+      <div class="title">Adidas XT 2.0 Cricket Helmet – Elite Protection</div>
+      <div class="brand">Brand: Adidas • Model: XT 2.0</div>
+      <div class="tagline">Lightweight ABS shell • Soft EVA padding • Maximum airflow</div>
+
+      <div class="price-row">
+        <div>
+          <div class="price">₹4,999</div>
+          <div><span class="old-price">₹6,299</span> &nbsp; <span class="discount">21% off</span></div>
+        </div>
+        <div class="cart-badge" id="cartCount">0</div>
+      </div>
+
+      <div style="display:flex; gap:12px; margin-top:12px;">
+        <button class="btn" id="shopNow">Shop Now</button>
+        <button class="btn" id="addToCart">Add to Cart</button>
+        <button class="btn secondary" id="viewCart">View Cart</button>
+      </div>
+
+      <div class="highlights">
+        <div class="chip">High-impact ABS shell</div>
+        <div class="chip">Stainless steel grill</div>
+        <div class="chip">Advanced airflow vents</div>
+        <div class="chip">Moisture-wicking interior</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="content">
+    <div>
+      <div class="card">
+        <h2>About Adidas</h2>
+        <p>Adidas is a world-leading sports brand known for premium engineering, innovation, and elite cricket protective gear trusted by international athletes.</p>
+
+        <h2 style="margin-top:18px;">Product Description</h2>
+        <p>The Adidas XT 2.0 helmet provides maximum protection with minimal weight. Perfect for leather-ball cricket, featuring improved grill design and comfortable padding.</p>
+
+        <h2 style="margin-top:18px;">Specifications</h2>
+        <table style="width:100%; border-collapse:collapse; font-size:15px;">
+          <tr><td style="padding:6px; color:var(--muted);">Shell Material</td><td>High-impact ABS</td></tr>
+          <tr><td style="padding:6px; color:var(--muted);">Grill</td><td>Premium Stainless Steel</td></tr>
+          <tr><td style="padding:6px; color:var(--muted);">Padding</td><td>Dual-layer EVA for comfort</td></tr>
+          <tr><td style="padding:6px; color:var(--muted);">Airflow</td><td>12-vent cooling system</td></tr>
+          <tr><td style="padding:6px; color:var(--muted);">Weight</td><td>820–900g</td></tr>
+          <tr><td style="padding:6px; color:var(--muted);">Suitable for</td><td>Leather-ball professional cricket</td></tr>
+        </table>
+
+        <h2 style="margin-top:22px;">Customer Reviews</h2>
+        <div>
+          <input id="revName" placeholder="Your name" style="padding:10px;border-radius:8px;border:1px solid #d0e7ff;width:200px;">&nbsp;
+          <select id="revRating" style="padding:10px;border-radius:8px;border:1px solid #d0e7ff;width:140px;">
+            <option value="5">★★★★★ 5</option>
+            <option value="4">★★★★ 4</option>
+            <option value="3">★★★ 3</option>
+            <option value="2">★★ 2</option>
+            <option value="1">★ 1</option>
+          </select>
+          <textarea id="revText" placeholder="Write your review..." style="margin-top:10px;width:100%;padding:10px;border-radius:8px;border:1px solid #d0e7ff;"></textarea>
+          <button class="btn" id="submitReview" style="margin-top:10px;">Submit Review</button>
+        </div>
+        <div class="reviews-list" id="reviewsList"></div>
+      </div>
+
+      <div class="card" style="margin-top:18px;">
+        <h2>Questions & Answers</h2>
+        <div>
+          <input id="qName" placeholder="Your name" style="padding:10px;border-radius:8px;border:1px solid #d0e7ff;width:200px;">&nbsp;
+          <input id="qText" placeholder="Ask a question..." style="padding:10px;border-radius:8px;border:1px solid #d0e7ff;width:350px;">
+          <button class="btn" id="askQuestion">Ask</button>
+        </div>
+        <div id="qaList" style="margin-top:12px;"></div>
+      </div>
+    </div>
+
+    <aside>
+      <div class="card">
+        <h2>Price & Offers</h2>
+        <ul>
+          <li>Special Price: 21% off</li>
+          <li>5% bank cashback available</li>
+          <li>EMI options at checkout</li>
+        </ul>
+      </div>
+
+      <div class="card" style="margin-top:16px;">
+        <h2>Delivery</h2>
+        <p>Delivery by <strong>3 Dec</strong> if ordered today</p>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<script>
+// Storage keys
+const CART_KEY = 'cart_adidas_xt';
+const REV_KEY = 'rev_adidas_xt';
+const QA_KEY = 'qa_adidas_xt';
+
+const $ = sel => document.querySelector(sel);
+
+// gallery
+document.querySelectorAll('.thumbs img').forEach(t => {
+  t.addEventListener('click', () => {
+    document.querySelectorAll('.thumbs img').forEach(x => x.classList.remove('active'));
+    t.classList.add('active');
+    $('#mainImg').src = t.dataset.src;
+  });
+});
+
+// cart
+function loadCart(){ return JSON.parse(localStorage.getItem(CART_KEY) || '[]'); }
+function saveCart(c){ localStorage.setItem(CART_KEY, JSON.stringify(c)); }
+function renderCartCount(){ $('#cartCount').textContent = loadCart().length; }
+
+$('#addToCart').addEventListener('click', () => {
+  const cart = loadCart();
+  cart.push({ id:'adidas-xt-001', title:'Adidas XT 2.0 Helmet', price:4999, time:new Date().toISOString() });
+  saveCart(cart);
+  renderCartCount();
+  alert('Added to cart ✓');
+});
+
+$('#shopNow').addEventListener('click', () => {
+  const cart = loadCart();
+  cart.push({ id:'adidas-xt-001', title:'Adidas XT 2.0 Helmet', price:4999, time:new Date().toISOString() });
+  saveCart(cart);
+  renderCartCount();
+  alert('Proceeding to checkout...');
+});
+
+$('#viewCart').addEventListener('click', () => {
+  const items = loadCart();
+  if(!items.length) return alert('Cart is empty');
+  let msg = 'Cart Items:\n\n';
+  items.forEach((it,i)=> msg += `${i+1}. ${it.title} — ₹${it.price}\n`);
+  alert(msg);
+});
+
+// reviews
+function loadReviews(){ return JSON.parse(localStorage.getItem(REV_KEY) || '[]'); }
+function saveReviews(r){ localStorage.setItem(REV_KEY, JSON.stringify(r)); }
+
+function renderReviews(){
+  const list = loadReviews();
+  const el = $('#reviewsList');
+  el.innerHTML = '';
+  if(!list.length) return el.innerHTML = '<div class="muted">No reviews yet.</div>';
+
+  list.slice().reverse().forEach(r => {
+    el.innerHTML += `<div class='review'><strong>${r.name}</strong> • ${new Date(r.time).toLocaleString()}<div class='r-stars'>${'★'.repeat(r.rating)}${'☆'.repeat(5-r.rating)}</div><div style='margin-top:6px;'>${r.text}</div></div>`;
+  });
+}
+
+$('#submitReview').addEventListener('click', () => {
+  const name = $('#revName').value.trim() || 'Anonymous';
+  const rating = Number($('#revRating').value);
+  const text = $('#revText').value.trim();
+  if(!text) return alert('Write a review first');
+
+  const list = loadReviews();
+  list.push({name, rating, text, time:new Date().toISOString()});
+  saveReviews(list);
+  renderReviews();
+});
+
+// Q&A
+function loadQA(){ return JSON.parse(localStorage.getItem(QA_KEY) || '[]'); }
+function saveQA(q){ localStorage.setItem(QA_KEY, JSON.stringify(q)); }
+
+function renderQA(){
+  const list = loadQA();
+  const el = $('#qaList');
+  el.innerHTML = '';
+  if(!list.length) return el.innerHTML = '<div class="muted">No questions yet.</div>';
+
+  list.slice().reverse().forEach(q => {
+    let ansHTML = '';
+    if(q.answers && q.answers.length){
+      ansHTML = q.answers.map(a => `<div class='answer'><strong>${a.by}</strong> • ${new Date(a.time).toLocaleString()}<div style='margin-top:6px;'>${a.text}</div></div>`).join('');
+    } else {
+      ansHTML = '<div class="muted">No answers yet.</div>';
+    }
+
+    el.innerHTML += `
+      <div class='qa-item'>
+        <strong>${q.name}</strong> • ${new Date(q.time).toLocaleString()}<br>
+        <div style='margin-top:6px;'>${q.question}</div>
+        <div style='margin-top:10px;'>${ansHTML}</div>
+        <div style='margin-top:10px; display:flex; gap:8px;'>
+          <input class='ansName' placeholder='Your name' style='padding:8px;border-radius:8px;border:1px solid #d0e7ff;'>
+          <input class='ansText' placeholder='Answer...' style='padding:8px;border-radius:8px;border:1px solid #d0e7ff;flex:1;'>
+          <button class='btn btn-answer'>Answer</button>
+        </div>
+      </div>`;
+  });
+
+  document.querySelectorAll('.btn-answer').forEach((btn, index) => {
+    btn.addEventListener('click', () => {
+      const list = loadQA();
+      const q = list[list.length - 1 - index];
+
+      const ctn = btn.parentElement.parentElement;
+      const by = ctn.querySelector('.ansName').value.trim() || 'Anonymous';
+      const text = ctn.querySelector('.ansText').value.trim();
+      if(!text) return alert('Write an answer first');
+
+      q.answers = q.answers || [];
+      q.answers.push({by, text, time:new Date().toISOString()});
+      saveQA(list);
+      renderQA();
+    });
+  });
+}
+
+$('#askQuestion').addEventListener('click', () => {
+  const name = $('#qName').value.trim() || 'Anonymous';
+  const question = $('#qText').value.trim();
+  if(!question) return alert('Write a question first');
+
+  const list = loadQA();
+  list.push({ name, question, time:new Date().toISOString(), answers:[] });
+  saveQA(list);
+  renderQA();
+});
+
+// initialize
+(function(){ renderCartCount(); renderReviews(); renderQA(); })();
+</script>
+
+</body>
+</html>

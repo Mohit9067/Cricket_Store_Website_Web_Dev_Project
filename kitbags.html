@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cricket Kitbags - Cricket Store</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background: linear-gradient(120deg, #e0f7fa, #e1f5fe);
+      color: #222;
+    }
+
+    header {
+      background-color: #00796b;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 28px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      padding: 40px;
+      justify-items: center;
+    }
+
+    .card {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      width: 260px;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 15px;
+      text-align: center;
+    }
+
+    .card-content h3 {
+      margin: 10px 0;
+      color: #00796b;
+    }
+
+    .card-content p {
+      color: #555;
+      font-size: 15px;
+      margin-bottom: 10px;
+    }
+
+    .price {
+      font-weight: bold;
+      color: #004d40;
+      font-size: 16px;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: #004d40;
+      color: white;
+      text-decoration: none;
+      padding: 8px 16px;
+      border-radius: 8px;
+      margin-top: 8px;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #00796b;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #00796b;
+      color: white;
+      padding: 15px 0;
+      font-size: 14px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>Cricket Kitbags Collection</header>
+
+  <div class="container">
+    <div class="card">
+      <img src="../ssbag.jpg" alt="SS Cricket Kitbag">
+      <div class="card-content">
+        <h3>SS Kitbag</h3>
+        <p>Durable and spacious kitbag for all your cricket essentials.</p>
+        <p class="price">₹1,500</p>
+        <a href="../ssbag.html" class="btn">Buy Now</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="../sgbag.webp" alt="SG Cricket Kitbag">
+      <div class="card-content">
+        <h3>SG Kitbag</h3>
+        <p>High-quality materials with multiple compartments for organized storage.</p>
+        <p class="price">₹1,400</p>
+        <a href="../sgbag.html" class="btn">Buy Now</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="../mrfbag.webp" alt="MRF Cricket Kitbag">
+      <div class="card-content">
+        <h3>MRF Kitbag</h3>
+        <p>Professional-grade bag with reinforced base and strong straps.</p>
+        <p class="price">₹1,600</p>
+        <a href="../mrfbag.html" class="btn">Buy Now</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="../ceatbag.jpg" alt="CEAT Cricket Kitbag">
+      <div class="card-content">
+        <h3>CEAT Kitbag</h3>
+        <p>Lightweight yet durable kitbag, perfect for club and tournament use.</p>
+        <p class="price">₹1,350</p>
+        <a href="ceatbag.html" class="btn">Buy Now</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="../dscbag.jpg" alt="DSC Cricket Kitbag">
+      <div class="card-content">
+        <h3>DSC Kitbag</h3>
+        <p>Premium bag with ergonomic design, ideal for carrying bats, pads, and gear.</p>
+        <p class="price">₹1,450</p>
+        <a href="dscbag.html" class="btn">Buy Now</a>
+      </div>
+    </div>
+  </div>
+
+  <footer>© 2025 Cricket Store | All Rights Reserved</footer>
+</body>
+</html>

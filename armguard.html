@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arm Guards - Cricket Store</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background: linear-gradient(120deg, #f1f8e9, #e3f2fd);
+      color: #222;
+    }
+
+    header {
+      background-color: #1b5e20;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 28px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      padding: 40px;
+      justify-items: center;
+    }
+
+    .card {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      width: 260px;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 15px;
+      text-align: center;
+    }
+
+    .card-content h3 {
+      margin: 10px 0;
+      color: #1b5e20;
+    }
+
+    .card-content p {
+      color: #555;
+      font-size: 15px;
+      margin-bottom: 10px;
+    }
+
+    .price {
+      font-weight: bold;
+      color: #d32f2f;
+      font-size: 16px;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: #2e7d32;
+      color: white;
+      text-decoration: none;
+      padding: 8px 16px;
+      border-radius: 8px;
+      margin-top: 8px;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #1b5e20;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #1b5e20;
+      color: white;
+      padding: 15px 0;
+      font-size: 14px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>Arm Guards Collection</header>
+
+  <div class="container">
+    <div class="card">
+      <img src="../ssarm.jpeg" alt="SS Arm Guard">
+      <div class="card-content">
+        <h3>SS Superlite Arm Guard</h3>
+        <p>Lightweight protection with adjustable straps for perfect fit.</p>
+        <p class="price">₹799</p>
+        <a href="../ssarm.html" class="btn">Buy Now</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="../sgarm.jpg" alt="SG Arm Guard">
+      <div class="card-content">
+        <h3>SG Test Arm Guard</h3>
+        <p>Premium-grade foam protection ideal for advanced players.</p>
+        <p class="price">₹899</p>
+        <a href="../sgarm.html" class="btn">Buy Now</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="../mrfarm.jpg" alt="MRF Arm Guard">
+      <div class="card-content">
+        <h3>MRF Genius Arm Guard</h3>
+        <p>High-density padding with comfortable mesh backing.</p>
+        <p class="price">₹999</p>
+        <a href="../mrfarm.html" class="btn">Buy Now</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="../ceatarm.jpg" alt="CEAT Arm Guard">
+      <div class="card-content">
+        <h3>CEAT Pro Shield Arm Guard</h3>
+        <p>Designed for superior coverage with breathable inner lining.</p>
+        <p class="price">₹849</p>
+        <a href="../ceatarm.html" class="btn">Buy Now</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="../dscarm.avif" alt="DSC Arm Guard">
+      <div class="card-content">
+        <h3>DSC Intense Arm Guard</h3>
+        <p>Ergonomic shape with lightweight build for long innings.</p>
+        <p class="price">₹749</p>
+        <a href="../dscarm.html" class="btn">Buy Now</a>
+      </div>
+    </div>
+  </div>
+
+  <footer>© 2025 Cricket Store | All Rights Reserved</footer>
+</body>
+</html>

@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>CEAT ProShield Abdominal Guard – Cricket Protection Gear</title>
+
+<style>
+  :root{
+    --accent:#005bff;
+    --accent-dark:#003fba;
+    --muted:#6b7280;
+    --bg1:#eef4ff;
+    --card:#ffffff;
+    --shadow: 0 8px 30px rgba(22,25,36,0.08);
+    --radius:14px;
+    font-family: "Inter", system-ui;
+  }
+  *{box-sizing:border-box}
+  body{ margin:0; background: linear-gradient(180deg,#eef4ff 0%, #fff 40%); color:#111827; }
+  .page{ max-width:1150px; margin:30px auto; padding:24px; }
+  .breadcrumb{ font-size:13px; color:var(--muted); margin-bottom:14px; }
+
+  .hero{ display:grid; grid-template-columns:420px 1fr; gap:28px; background:var(--card); border-radius:var(--radius); padding:28px; box-shadow:var(--shadow); align-items:start; }
+  .gallery{ display:flex; gap:12px; flex-direction:column; align-items:center; }
+  .thumbs{ display:flex; gap:8px; margin-top:12px; }
+  .thumbs img{ width:76px;height:76px;object-fit:cover;border-radius:10px;border:2px solid transparent;cursor:pointer; }
+  .thumbs img.active{ border-color:var(--accent); }
+  .main-image{ width:360px;height:420px;border-radius:12px;object-fit:contain;background:#f8faff; padding:18px; }
+
+  .info{ padding:6px 6px 6px 0; }
+  .title{ font-size:26px;font-weight:700;margin:0 0 6px; }
+  .brand{ color:var(--muted); font-weight:600; font-size:14px; margin-bottom:8px; }
+  .tagline{ color:#374151; margin-bottom:10px; }
+
+  .price-row{ display:flex; align-items:center; gap:18px; margin:14px 0; }
+  .price{ font-size:28px; color:var(--accent); font-weight:800; }
+  .old-price{ color:var(--muted); text-decoration:line-through; font-size:14px; }
+  .discount{ background:#eef4ff; color:var(--accent);padding:6px 10px;border-radius:8px;font-weight:700;font-size:13px; }
+
+  .btn{ background:var(--accent); color:#fff; padding:12px 20px; border-radius:10px; font-weight:700; border:none; cursor:pointer; }
+  .btn.secondary{ background:transparent; border:1px solid #e5e7eb; color:#111827; font-weight:600; }
+  .cart-badge{ background:#111827; color:#fff; padding:6px 10px; border-radius:999px; font-size:14px; margin-left:auto; }
+
+  .highlights{ display:flex; gap:12px; margin-top:12px; flex-wrap:wrap; }
+  .chip{ background:#fff; padding:10px 12px; border-radius:12px; border:1px solid #f1f5f9; color:var(--muted); font-weight:600; font-size:13px; }
+
+  .content{ margin-top:22px; display:grid; grid-template-columns:2fr 1fr; gap:20px; }
+  .card{ background:var(--card); border-radius:12px; padding:18px; box-shadow:var(--shadow); }
+
+  h2{ margin:0 0 12px 0; font-size:20px; color:#0f172a; }
+  p{ color:#374151; line-height:1.6; margin:0 0 10px 0; }
+
+  .specs table{ width:100%; border-collapse:collapse; font-size:15px; }
+  .specs td{ padding:10px 6px; border-bottom:1px dashed #cdd9ff; }
+  .specs td.title{ color:var(--muted); width:40%; font-weight:700; }
+
+  .review, .qa-item{ border:1px solid #cdd9ff; background:#fff; padding:12px; border-radius:10px; margin-top:10px; }
+  .answer{ margin-left:14px; margin-top:8px; padding:10px; background:#eef4ff; border-radius:8px; }
+
+  textarea, input, select{ padding:10px; border-radius:8px; border:1px solid #cdd9ff; width:100%; }
+  .form-row{ display:flex; gap:10px; margin-top:10px; }
+
+  @media(max-width:980px){ .hero{ grid-template-columns:1fr; } .main-image{ width:100%; height:340px; } }
+</style>
+</head>
+<body>
+<div class="page">
+
+<div class="breadcrumb">Home › Sports › Cricket › Abdominal Guard › CEAT › <strong>CEAT ProShield</strong></div>
+
+<div class="hero">
+  <div class="gallery">
+    <img id="mainImg" class="main-image" src="/mnt/data/ceat-guard-1.png" alt="CEAT ProShield">
+    <div class="thumbs">
+      <img src="/mnt/data/ceat-guard-1.png" data-src="/mnt/data/ceat-guard-1.png" class="active">
+      <img src="/mnt/data/ceat-guard-2.png" data-src="/mnt/data/ceat-guard-2.png">
+      <img src="/mnt/data/ceat-guard-3.png" data-src="/mnt/data/ceat-guard-3.png">
+    </div>
+  </div>
+
+  <div class="info">
+    <div class="title">CEAT ProShield Abdominal Guard – Elite Protection</div>
+    <div class="brand">Brand: CEAT • Category: Cricket Protection</div>
+    <div class="tagline">High-impact resistance • Superior airflow • Athlete-tested comfort</div>
+
+    <div class="price-row">
+      <div>
+        <div class="price">₹499</div>
+        <div class="muted"><span class="old-price">₹699</span> &nbsp; <span class="discount">28% off</span></div>
+      </div>
+      <div class="cart-badge" id="cartCount">0</div>
+    </div>
+
+    <div class="form-row" style="margin-top:14px;">
+      <button class="btn" id="shopNow">Shop Now</button>
+      <button class="btn" id="addToCart">Add to Cart</button>
+      <button class="btn secondary" id="viewCart">View Cart</button>
+    </div>
+
+    <div class="highlights">
+      <div class="chip">High-Impact Poly Resin</div>
+      <div class="chip">Soft Inner Cushioning</div>
+      <div class="chip">Breathable Design</div>
+      <div class="chip">Adult & Youth Sizes</div>
+    </div>
+  </div>
+</div>
+
+<div class="content">
+  <div>
+    <div class="card specs">
+      <h2>About CEAT</h2>
+      <p>CEAT is a trusted cricket gear manufacturer known for its high-quality protective equipment, used by top domestic & international players. CEAT focuses on durability, performance, and comfort in all cricket safety gear.</p>
+
+      <h2>Product Description</h2>
+      <p>The <strong>CEAT ProShield Abdominal Guard</strong> is engineered using high-impact resistant materials and breathable cushioning layers. Designed for cricket players at all levels, this guard ensures maximum groin protection without compromising comfort or mobility.</p>
+
+      <h2>Specifications</h2>
+      <table>
+        <tr><td class="title">Material</td><td>High-density Poly Resin</td></tr>
+        <tr><td class="title">Padding</td><td>Soft inner foam with airflow vents</td></tr>
+        <tr><td class="title">Fit</td><td>Snug ergonomic shape</td></tr>
+        <tr><td class="title">Usage</td><td>Leather ball & tennis ball cricket</td></tr>
+        <tr><td class="title">Sizes</td><td>Adult / Youth</td></tr>
+        <tr><td class="title">Weight</td><td>Lightweight (85–100g)</td></tr>
+      </table>
+    </div>
+
+    <!-- Reviews -->
+    <div class="card">
+      <h2>Customer Reviews <span id="avgRating" style="color:var(--muted);font-size:14px"></span></h2>
+
+      <div class="form-row">
+        <input type="text" id="revName" placeholder="Your name">
+        <select id="revRating">
+          <option value="5">★★★★★ 5</option>
+          <option value="4">★★★★ 4</option>
+          <option value="3">★★★ 3</option>
+          <option value="2">★★ 2</option>
+          <option value="1">★ 1</option>
+        </select>
+      </div>
+
+      <textarea id="revText" placeholder="Write your review..."></textarea>
+      <div class="form-row">
+        <button class="btn" id="submitReview">Submit Review</button>
+        <button class="btn secondary" id="clearReviews">Clear All (debug)</button>
+      </div>
+
+      <div id="reviewsList"></div>
+    </div>
+
+    <!-- Q&A -->
+    <div class="card">
+      <h2>Questions & Answers</h2>
+      <div class="form-row">
+        <input id="qName" type="text" placeholder="Your name">
+        <input id="qText" type="text" placeholder="Ask a question...">
+        <button class="btn" id="askQuestion">Ask</button>
+      </div>
+      <div id="qaList"></div>
+    </div>
+  </div>
+
+  <aside>
+    <div class="card">
+      <h2>Price & Offers</h2>
+      <p>• Special discount applied<br>• Bank cashback available<br>• Fast delivery options</p>
+    </div>
+
+    <div class="card" style="margin-top:16px;">
+      <h2>Delivery</h2>
+      <p>Delivery by <strong>3 Dec</strong> if ordered today</p>
+      <p class="muted">COD available</p>
+    </div>
+
+    <div class="card" style="margin-top:16px;">
+      <h2>Seller</h2>
+      <p><strong>CEAT Official Store</strong></p>
+      <p class="muted">7-Day Return • GST Invoice</p>
+    </div>
+  </aside>
+</div>
+</div>
+
+<script>
+const CART_KEY = 'cart_ceat_guard';
+const REV_KEY = 'reviews_ceat_guard';
+const QA_KEY = 'qa_ceat_guard';
+
+const $ = s => document.querySelector(s);
+
+// gallery
+const thumbs = document.querySelectorAll('.thumbs img');
+const mainImg = $('#mainImg');
+thumbs.forEach(t => t.addEventListener('click', () => {
+  thumbs.forEach(x=>x.classList.remove('active'));
+  t.classList.add('active');
+  mainImg.src = t.dataset.src;
+}));
+
+// cart
+function loadCart(){ return JSON.parse(localStorage.getItem(CART_KEY) || '[]'); }
+function saveCart(c){ localStorage.setItem(CART_KEY, JSON.stringify(c)); }
+function renderCartCount(){ $('#cartCount').textContent = loadCart().length; }
+
+$('#addToCart').addEventListener('click', () => {
+  const c = loadCart();
+  c.push({ id:'ceat-guard-001', title:'CEAT ProShield Abdominal Guard', price:499, time:Date.now() });
+  saveCart(c); renderCartCount(); alert('Added to cart ✓');
+});
+$('#shopNow').addEventListener('click', () => {
+  const c = loadCart();
+  c.push({ id:'ceat-guard-001', title:'CEAT ProShield Abdominal Guard', price:499, time:Date.now() });
+  saveCart(c); renderCartCount(); alert('Proceeding to checkout... (demo)');
+});
+$('#viewCart').addEventListener('click', () => {
+  const c = loadCart(); if(!c.length) return alert('Cart is empty');
+  let msg = 'Cart Items:\n\n';
+  c.forEach((i,n)=> msg += `${n+1}. ${i.title} — ₹${i.price}\n`);
+  alert(msg);
+});
+
+// reviews
+function loadReviews(){ return JSON.parse(localStorage.getItem(REV_KEY) || '[]'); }
+function saveReviews(r){ localStorage.setItem(REV_KEY, JSON.stringify(r)); }
+function avgRating(r){ if(!r.length) return 0; return (r.reduce((a,b)=>a+Number(b.rating),0) / r.length).toFixed(1); }
+
+function escapeHtml(s){ return String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
+
+function renderReviews(){
+  const list = loadReviews();
+  const box = $('#reviewsList');
+  box.innerHTML = '';
+  if(!list.length){ box.innerHTML = '<div class="muted">No reviews yet.</div>'; }
+  list.slice().reverse().forEach(r => {
+    const div = document.createElement('div');
+    div.className = 'review';
+    const stars = '★'.repeat(r.rating) + '☆'.repeat(5-r.rating);
+    div.innerHTML = `<strong>${escapeHtml(r.name)}</strong> • <span class='muted'>${new Date(r.time).toLocaleString()}</span><div>${stars}</div><p>${escapeHtml(r.text)}</p>`;
+    box.appendChild(div);
+  });
+  const avg = avgRating(list);
+  $('#avgRating').textContent = list.length ? `Avg: ${avg} / 5 (${list.length})` : '';
+}
+
+$('#submitReview').addEventListener('click', () => {
+ 	const name = $('#revName').value || 'Anonymous';
+	const rating = $('#revRating').value;
+	const text = $('#revText').value.trim();
+	if(!text) return alert("Please write a review.");
+	const list = loadReviews();
+	list.push({name, rating, text, time:Date.now()});
+	saveReviews(list);
+	$('#revText').value = '';
+	renderReviews();
+});
+$('#clearReviews').addEventListener('click', () => { localStorage.removeItem(REV_KEY); renderReviews(); });
+
+// Q&A
+function loadQA(){ return JSON.parse(localStorage.getItem(QA_KEY) || '[]'); }
+function saveQA(q){ localStorage.setItem(QA_KEY, JSON.stringify(q)); }
+
+function renderQA() {
+  const list = loadQA();
+  const box = $('#qaList');
+  box.innerHTML = '';
+  if(!list.length) box.innerHTML = '<div class="muted">No questions yet.</div>';
+
+  list.slice().reverse().forEach(q => {
+    const div = document.createElement('div');
+    div.className = 'qa-item';
+    div.innerHTML = `<strong>${escapeHtml(q.name)}</strong> <span class='muted'>• ${new Date(q.time).toLocaleString()}</span><p>${escapeHtml(q.question)}</p>`;
+
+    // answers
+    if(q.answers && q.answers.length){
+      q.answers.forEach(a => {
+        const ad = document.createElement('div');
+        ad.className = 'answer';
+        ad.innerHTML = `<strong>${escapeHtml(a.by)}</strong> <span class='muted'>• ${new Date(a.time).toLocaleString()}</span><div>${escapeHtml(a.text)}</div>`;
+        div.appendChild(ad);
+      });
+    } else {
+      div.innerHTML += `<div class='muted'>No answers yet.</div>`;
+    }
+
+    // answer form
+    const ansName = document.createElement('input');
+    ansName.placeholder = 'Your name';
+    ansName.style.marginTop = '8px';
+
+    const ansText = document.createElement('input');
+    ansText.placeholder = 'Write an answer';
+    ansText.style.marginTop = '8px';
+
+    const btn = document.createElement('button');
+    btn.className = 'btn';
+    btn.textContent = 'Answer';
+    btn.style.marginTop = '8px';
+
+    btn.addEventListener('click', () => {
+      const by = ansName.value || 'Anonymous';
+      const txt = ansText.value.trim();
+      if(!txt) return alert('Enter your answer.');
+      const all = loadQA();
+      const idx = all.findIndex(x => x.time === q.time);
+      all[idx].answers = all[idx].answers || [];
+      all[idx].answers.push({by, text:txt, time:Date.now()});
+      saveQA(all);
+      renderQA();
+    });
+
+    div.appendChild(ansName);
+    div.appendChild(ansText);
+    div.appendChild(btn);
+
+    box.appendChild(div);
+  });
+}
+
+$('#askQuestion').addEventListener('click', ()=>{
+  const name = $('#qName').value || 'Anonymous';
+  const text = $('#qText').value.trim();
+  if(!text) return alert('Enter your question');
+  const list = loadQA();
+  list.push({name, question:text, time:Date.now(), answers:[]});
+  saveQA(list);
+  $('#qText').value = '';
+  renderQA();
+});
+
+// seed
+(function(){
+  if(!localStorage.getItem(REV_KEY)){
+    saveReviews([
+      {name:'Rohit', rating:5, text:'Very comfortable and strong.', time:Date.now()-86400000},
+      {name:'Manish', rating:4, text:'Good protection for leather ball practice.', time:Date.now()-86400000*2}
+    ]);
+  }
+  if(!localStorage.getItem(QA_KEY)){
+    saveQA([
+      {name:'Amit', question:'Does it fit youth size?', time:Date.now()-86400000*3, answers:[{by:'CEAT Official', text:'Yes, Youth size is available.', time:Date.now()-86400000*2}]}
+    ]);
+  }
+  renderReviews();
+  renderQA();
+  renderCartCount();
+})();
+</script>
+</body>
+</html>

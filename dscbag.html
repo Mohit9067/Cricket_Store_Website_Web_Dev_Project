@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>DSC Krunch Pro – Cricket Kitbag</title>
+<style>
+  :root{
+    --accent:#ff3b30;
+    --accent-dark:#c62828;
+    --muted:#6b7280;
+    --bg1:#ffecec;
+    --card:#ffffff;
+    --shadow:0 8px 30px rgba(0,0,0,0.08);
+    --radius:14px;
+    font-family:"Inter",system-ui;
+  }
+  *{box-sizing:border-box}
+  body{ margin:0; background:linear-gradient(180deg,#ffecec 0%, #fff 40%); color:#111827; }
+  .page{ max-width:1150px; margin:30px auto; padding:24px; }
+  .breadcrumb{ font-size:13px;color:var(--muted); margin-bottom:14px; }
+  .hero{ display:grid; grid-template-columns:420px 1fr; gap:28px; background:var(--card); border-radius:var(--radius); padding:28px; box-shadow:var(--shadow); }
+  .gallery{ display:flex; flex-direction:column; align-items:center; gap:12px; }
+  .main-image{ width:360px; height:420px; object-fit:contain; border-radius:12px; background:#fff5f5; padding:18px; }
+  .thumbs{ display:flex; gap:8px; }
+  .thumbs img{ width:76px; height:76px; object-fit:cover; border-radius:10px; cursor:pointer; border:2px solid transparent; }
+  .thumbs img.active{ border-color:var(--accent); }
+  .info .title{ font-size:26px; font-weight:700; }
+  .brand{ color:var(--muted); font-size:14px; margin-bottom:8px; }
+  .price-row{ display:flex; align-items:center; gap:18px; margin:14px 0; }
+  .price{ font-size:28px;color:var(--accent);font-weight:800; }
+  .old-price{ text-decoration:line-through;color:var(--muted); }
+  .discount{ background:#ffecec; padding:6px 10px; border-radius:8px; color:var(--accent); font-weight:700; }
+  .btn{ background:var(--accent); color:#fff; padding:12px 20px; border-radius:10px; font-weight:700; border:none; cursor:pointer; }
+  .btn.secondary{ background:transparent; border:1px solid #ddd; color:#111; }
+  .chip{ background:#fff; border:1px solid #f1c1c1; padding:10px 12px; border-radius:12px; font-size:13px; color:#c62828; }
+  .content{ margin-top:22px; display:grid; grid-template-columns:2fr 1fr; gap:20px; }
+  .card{ background:#fff; padding:18px; border-radius:12px; box-shadow:var(--shadow); }
+  h2{ margin:0 0 12px; font-size:20px; }
+  .reviews-list,.qa-item{ margin-top:10px; }
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="breadcrumb">Home › Sports › Cricket › Kitbags › DSC › <strong>DSC Krunch Pro</strong></div>
+
+  <div class="hero">
+    <div class="gallery">
+      <img id="mainImg" class="main-image" src="dsc1.png" alt="DSC Kitbag" />
+      <div class="thumbs">
+        <img src="dsc1.png" data-src="dsc1.png" class="active" />
+        <img src="dsc2.png" data-src="dsc2.png" />
+        <img src="dsc3.png" data-src="dsc3.png" />
+      </div>
+    </div>
+
+    <div class="info">
+      <div class="title">DSC Krunch Pro Cricket Kitbag</div>
+      <div class="brand">Brand: DSC • Model: Krunch Pro</div>
+
+      <div class="price-row">
+        <div>
+          <div class="price">₹3,499</div>
+          <div><span class="old-price">₹4,299</span> &nbsp; <span class="discount">18% off</span></div>
+        </div>
+        <div style="margin-left:auto;display:flex;align-items:center;">
+          <span style="color:var(--muted);margin-right:10px">COD available</span>
+          <span id="cartCount" style="background:#222;color:#fff;padding:6px 12px;border-radius:20px;font-size:14px;">0</span>
+        </div>
+      </div>
+
+      <div class="buy-actions" style="display:flex; gap:12px; margin-top:18px;">
+        <button class="btn" id="shopNow">Shop Now</button>
+        <button class="btn" id="addToCart">Add to Cart</button>
+        <button class="btn secondary" id="viewCart">View Cart</button>
+      </div>
+
+      <div class="highlights" style="margin-top:16px; display:flex; gap:10px; flex-wrap:wrap;">
+        <div class="chip">Large Storage</div>
+        <div class="chip">Premium Polyester</div>
+        <div class="chip">Heavy Duty Wheels</div>
+        <div class="chip">Extra Bat Compartment</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="content">
+    <div>
+      <div class="card">
+        <h2>About DSC</h2>
+        <p>DSC (Deluxe Sports Company) is one of India's leading cricket equipment manufacturers. Known for durable, lightweight and professional-grade gear, DSC is trusted by international players worldwide.</p>
+
+        <h2 style="margin-top:16px">Product Description</h2>
+        <p>The DSC Krunch Pro Kitbag is built for professional and club players. It features a huge main compartment, bat sleeve, heavy-duty wheels, and reinforced base for long-lasting performance.</p>
+
+        <h2 style="margin-top:16px">Specifications</h2>
+        <table style="width:100%;font-size:15px;">
+          <tr><td style="color:var(--muted);font-weight:700;width:40%">Material</td><td>Premium PU-coated polyester</td></tr>
+          <tr><td style="color:var(--muted);font-weight:700;">Capacity</td><td>Full cricket gear + 2 bats</td></tr>
+          <tr><td style="color:var(--muted);font-weight:700;">Wheels</td><td>Heavy-duty with metal axle</td></tr>
+          <tr><td style="color:var(--muted);font-weight:700;">Zippers</td><td>High-quality DSC zippers</td></tr>
+          <tr><td style="color:var(--muted);font-weight:700;">Padding</td><td>Thick EVA protection padding</td></tr>
+        </table>
+      </div>
+
+      <div class="card" style="margin-top:18px;">
+        <h2>Customer Reviews</h2>
+        <input id="revName" placeholder="Your name" style="padding:10px;width:200px;border:1px solid #ddd;border-radius:8px;"> 
+        <select id="revRating" style="padding:10px;border-radius:8px;border:1px solid #ddd;">
+          <option value="5">★★★★★ 5</option>
+          <option value="4">★★★★ 4</option>
+          <option value="3">★★★ 3</option>
+          <option value="2">★★ 2</option>
+          <option value="1">★ 1</option>
+        </select>
+        <textarea id="revText" placeholder="Write review..." style="width:100%;margin-top:10px;padding:10px;border-radius:8px;border:1px solid #ddd;"></textarea>
+        <button class="btn" id="submitReview" style="margin-top:10px;">Submit Review</button>
+        <div id="reviewsList"></div>
+      </div>
+
+      <div class="card" style="margin-top:18px;">
+        <h2>Questions & Answers</h2>
+        <input id="qName" placeholder="Your name" style="padding:10px;border:1px solid #ddd;border-radius:8px;width:180px;"> 
+        <input id="qText" placeholder="Ask a question..." style="padding:10px;border:1px solid #ddd;border-radius:8px;width:60%;margin-left:10px;">
+        <button class="btn" id="askQuestion" style="margin-left:10px;">Ask</button>
+        <div id="qaList" style="margin-top:14px;"></div>
+      </div>
+    </div>
+
+    <aside>
+      <div class="card">
+        <h2>Offers</h2>
+        <p>Special Price: 18% off</p>
+        <p>Bank Offers: 5% cashback</p>
+      </div>
+
+      <div class="card" style="margin-top:16px;">
+        <h2>Delivery</h2>
+        <p>Delivery in 4–6 days</p>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<script>
+const CART_KEY = 'cart_dsc_krunch';
+const REV_KEY = 'reviews_dsc_krunch';
+const QA_KEY = 'qa_dsc_krunch';
+const $ = s => document.querySelector(s);
+
+// gallery
+const thumbs = document.querySelectorAll('.thumbs img');
+const mainImg = $('#mainImg');
+thumbs.forEach(t => t.onclick = () => { thumbs.forEach(x=>x.classList.remove('active')); t.classList.add('active'); mainImg.src = t.dataset.src; });
+
+// cart
+function loadCart(){ return JSON.parse(localStorage.getItem(CART_KEY)||'[]'); }
+function saveCart(c){ localStorage.setItem(CART_KEY,JSON.stringify(c)); }
+function renderCartCount(){ $('#cartCount').textContent = loadCart().length; }
+$('#addToCart').onclick = () =>{ const c = loadCart(); c.push({id:'dsc-krunch',title:'DSC Krunch Pro',price:3499}); saveCart(c); renderCartCount(); alert('Added to cart!'); };
+$('#shopNow').onclick = () =>{ alert('Proceed to checkout (demo)'); };
+$('#viewCart').onclick = () =>{ const c = loadCart(); alert(JSON.stringify(c,null,2)); };
+
+// reviews
+function loadReviews(){ return JSON.parse(localStorage.getItem(REV_KEY)||'[]'); }
+function saveReviews(r){ localStorage.setItem(REV_KEY,JSON.stringify(r)); }
+function renderReviews(){ const list = loadReviews(); const el = $('#reviewsList'); el.innerHTML=''; if(!list.length) return el.innerHTML='<p style="color:gray;">No reviews yet.</p>'; list.slice().reverse().forEach(r=>{ el.innerHTML += `<div style='padding:10px;border:1px solid #ffd4d4;border-radius:10px;margin-top:8px;'><strong>${r.name}</strong> • ${'★'.repeat(r.rating)}<div style='margin-top:6px'>${r.text}</div></div>`; }); }
+$('#submitReview').onclick = ()=>{
+ const name=$('#
